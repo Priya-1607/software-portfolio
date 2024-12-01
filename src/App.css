@@ -1,0 +1,21 @@
+.back{
+  
+  height: 100%;
+  width: 100%;
+}
+html, body {
+
+  background-color:#151312;
+  height: 100%;
+  width: 100%;
+}
+.new{
+  color:white;
+}
+@media (max-width: 768px) {
+  .right-container {
+    margin-left: 0px !important;
+    
+    overflow-y: none !important;
+}
+}

@@ -1,0 +1,24 @@
+.image{
+   border-radius: 2.5;
+   height: 50px;
+   width: 50px;
+}
+.button{
+  height:'5rem'
+}
+@media (max-width: 768px) {
+   /* Styles for screens smaller than 768px */
+  
+   .container {
+     padding: 10px;
+   }
+   .image{
+   
+    height: 100px;
+    width: 100px;
+ }
+ .button{
+  height:'15rem'
+}
+ }
+ 

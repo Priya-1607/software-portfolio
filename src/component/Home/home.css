@@ -1,0 +1,131 @@
+.card{
+    width: 28%;
+   min-height: 10rem;
+   margin-left: 5rem;
+   margin-top:5rem;;
+}
+.head1{
+    
+    color: aliceblue;
+   
+}
+.jjjj1{
+    display: flex;
+  justify-content: center; /* Center horizontally */
+  text-align: center;
+}
+.container{
+    display: flex;
+margin-top: 5rem;
+margin-bottom: 5rem;
+  /* justify-content: space-between;  */
+}
+.item {
+    flex: 1; /* All items take equal width */
+    text-align: center; /* Optional: Center text within each item */
+   margin-right:11rem;
+    
+  }
+  .container1{
+    display: flex;
+   width: 100%;
+  }
+  .left-container {
+ 
+   width: 80rem;
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Fixes the left container */
+    overflow: hidden; /* Prevents scrolling in the left container */
+}
+
+.right-container {
+    /* margin-left: 400px;  */
+ 
+  
+    height: 100%;
+    overflow-y:visible;
+}
+
+.content {
+    height: 2000px; /* Just for demo purposes */
+   
+}
+.css-11lq3yg-MuiGrid-root {
+       
+    flex-direction: row;
+}
+.css-105jbys {
+    height: 15rem;
+  }
+@media (max-width: 768px) {
+    .css-11lq3yg-MuiGrid-root {
+       
+        flex-direction: column !important;
+    }
+    /* Styles for screens smaller than 768px */
+    /* .css-11lq3yg-MuiGrid-root {
+        display: flex;
+        flex-direction: column;
+    } */
+    .card{
+      width: 70rem !important;
+     height: 20rem !important;
+    }
+    .con{
+        margin-left:0rem !important;
+        display: grid !important;
+        font-size: 140px !important;
+      
+    }
+   .soft{
+    font-size: 140px !important;
+   }
+.paraw{
+    font-size: 50px !important;
+}
+
+.green-box{
+    width: 12rem !important;
+    height: 65rem !important;
+} 
+.right-container {
+    margin-left: 0px !important;
+    
+    overflow-y: none !important;
+}
+.left-container {
+   
+ margin-top: 0rem;
+ 
+
+    width: 80rem;
+   
+   position: relative;
+}
+
+
+.MuiGrid-container{
+    display: flex;
+}
+
+  .org-box {
+    width: 65rem !important;
+    border-radius: 1rem !important;
+}
+.css-14khhed-MuiTypography-root {
+    font-size: 6rem !important;
+}
+
+.css-qpedog-MuiTypography-root {
+    font-size: 6rem !important;
+}
+.css-1lt895v-MuiTypography-root{
+    font-size: 6rem !important;
+}
+.green-box {
+    height: 60rem;
+    width: 65rem !important;
+    margin-top: 5rem;
+}
+
+}
