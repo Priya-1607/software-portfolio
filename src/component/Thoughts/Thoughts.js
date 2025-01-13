@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import Box from '@mui/material/Box';
 import '../Thoughts/Thought.css'
+import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 function Thoughts() {
   return (
@@ -15,7 +16,7 @@ function Thoughts() {
   Coding 
       </Typography>
       <Typography variant="h1" sx={{color:'#353334',fontWeight:800,'@media (max-width:765px)': {fontSize:'140px'}}}>
-      Quotes
+      Platforms
       </Typography>
     
     <Card className='button' sx={{ maxWidth: 720,backgroundColor:'#161312'}}>
@@ -33,14 +34,14 @@ function Thoughts() {
            <Typography sx={{color:'white',fontSize:'2rem',fontWeight:700,'@media (max-width:765px)': {
     fontSize:'3rem'
      }}}>
-          John Johnson
+          Leet Code
            </Typography>
            <Typography sx={{color:'#353334',fontSize:'15px',fontWeight:700,marginTop:'1rem'}}>
-           First, solve the problem. Then, write the code. 
+         Quotes:First, solve the problem. Then, write the code. 
            </Typography>
            </Box>
     
-           <MdArrowOutward className='arrow1'/>
+           <Link to="https://leetcode.com/u/priya16singh/">   <MdArrowOutward className='arrow1'/></Link>
            </Box>
           </CardContent>
         </CardActionArea>
@@ -60,14 +61,15 @@ function Thoughts() {
            <Typography sx={{color:'white',fontSize:'2rem',fontWeight:700,'@media (max-width:765px)': {
     fontSize:'3rem'
      }}}>
-         Robert C. Martin
+      Hacker Rank
+        {/* https://www.hackerrank.com/profile/priyasingh882656 */}
            </Typography>
            <Typography sx={{color:'#353334',fontSize:'15px',fontWeight:700,marginTop:'1rem'}}>
-           Clean code always looks like it was written by someone who cares.
+           Quotes:Clean code always looks like it was written by someone who cares.
            </Typography>
            </Box>
     
-           <MdArrowOutward className='arrow1'/>
+           <Link to="https://www.hackerrank.com/profile/priyasingh882656">      <MdArrowOutward className='arrow1'/></Link>
            </Box>
           </CardContent>
         </CardActionArea>
@@ -87,14 +89,14 @@ function Thoughts() {
            <Typography sx={{color:'white',fontSize:'2rem',fontWeight:700,'@media (max-width:765px)': {
     fontSize:'3rem'
      }}}>
-           Santosh Kalwar
+           Git Hub
            </Typography>
            <Typography sx={{color:'#353334',fontSize:'15px',fontWeight:700,marginTop:'1rem'}}>
-           Coding like poetry should be short and concise.
+           Quotes:Coding like poetry should be short and concise.
            </Typography>
            </Box>
     
-           <MdArrowOutward className='arrow1'/>
+           <Link to="https://github.com/Priya-1607">      <MdArrowOutward className='arrow1'/></Link>
            </Box>
           </CardContent>
         </CardActionArea>

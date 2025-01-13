@@ -178,11 +178,11 @@ LET'S WORK
     fontSize:'3rem'
      }}}>
        
-       Budget
+      Phone Number
    
    
          
-          <TextField placeholder='Your@email.com' variant="filled" sx={{backgroundColor:'#353334',borderRadius:'10px',height:'40px',width:'45rem',justifyContent:'center',textAlign:'start'}}/>
+          <TextField placeholder='XXXXXXXXXX' variant="filled" sx={{backgroundColor:'#353334',borderRadius:'10px',height:'40px',width:'45rem',justifyContent:'center',textAlign:'start'}}/>
     
         </FormControl>
         <FormControl variant="standard" sx={{color:'white',gap:2,paddingTop:'2rem','@media (max-width:765px)': {

@@ -27,7 +27,7 @@ function ExperienceCard() {
        <Typography sx={{color:'white',fontSize:'1.5rem',fontWeight:700,'@media (max-width:765px)': {
     fontSize:'3rem'
      }}}>
-       Times Internet  |  Noida
+     ALLeviate Tech Pvt Ltd  |  Noida
        </Typography>
        <Typography sx={{color:'#998e8f',fontSize:'15px',fontWeight:700,marginTop:'1rem'}}>
        UI Developer

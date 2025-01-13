@@ -7,6 +7,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import Box from '@mui/material/Box';
 import { MdArrowOutward } from "react-icons/md";
 import '../Card/Project.css'
+import News from '../image/newa.png'
 function ProjectCard() {
   return (
     <>
@@ -79,7 +80,8 @@ function ProjectCard() {
          }}
        >
           <div className='imgdiv'>
-<img src="https://img.freepik.com/premium-vector/e-commerce-shopping-website-banner-design-template_556845-302.jpg" width={100} height={100} className='img' />
+             <img  src={News} alt="dskjjkd" width={100} height={100} className='img'/>
+{/* <img src="https://img.freepik.com/premium-vector/e-commerce-shopping-website-banner-design-template_556845-302.jpg" width={100} height={100} className='img' /> */}
      
 </div> 
        </Box>
@@ -87,16 +89,16 @@ function ProjectCard() {
        <Typography sx={{color:'white',fontSize:'2rem',fontWeight:700,'@media (max-width:765px)': {
     fontSize:'2rem'
      }}}>
-       Fantastic style
+     NEWS WEBSITE
        </Typography>
        <Typography sx={{color:'#C5FF41',fontSize:'15px',fontWeight:700,marginTop:'1px'}}>
        HTML5,CSS,Reactjs,Javascript,Tailwind CSS
        </Typography>
        <Typography sx={{color:'#998E8F',fontSize:'15px',fontWeight:700,marginTop:'1px',paddingTop:'5px'}}>
-       Shopping website we can buy Products<br/> add to Cart delete items from Cart
+       A responsive and well-organized<br/> user interface was implemented
        </Typography>
        </Box>
-       <a href="https://www.writo.tech/" target="_blank" rel="noopener noreferrer">   <MdArrowOutward className='arrow'/></a>
+       <a href="https://github.com/Priya-1607/news-website" target="_blank" rel="noopener noreferrer">   <MdArrowOutward className='arrow'/></a>
        </Box>
        </CardContent>
      </CardActionArea>

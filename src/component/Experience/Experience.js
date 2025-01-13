@@ -9,7 +9,7 @@ function Experience() {
         <Typography variant="h1" sx={{color:'white',fontWeight:800,'@media (max-width:765px)': {
     fontSize:'140px'
      }}}>
-        12 YEARS OF
+        2+ YEARS OF
       </Typography>
       <Typography variant="h1" sx={{color:'#353334',fontWeight:800,'@media (max-width:765px)': {
     fontSize:'140px'

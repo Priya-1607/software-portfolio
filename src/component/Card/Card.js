@@ -12,6 +12,7 @@ import { FaHome } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { SiHackerrank } from "react-icons/si";
+
 import Me from '../image/priya.png'
 const bull = (
   <Box
@@ -71,9 +72,9 @@ export default function BasicCard() {
     }}>A Software Engineer who has <br/>developed countless innovative <br/>solutions.</Typography></Box>
         <Box sx={{marginTop:'2rem',display:'flex',gap:4,paddingLeft:'15px'}}>
 
-        <a href="tel:9667107991"> <FaPhone /></a>
+      <a type='button' href="tel:9667107991"> <FaPhone /></a>
        
-        <a href="https://www.linkedin.com/in/16priya/">   <BsLinkedin /></a>
+        <a href="https://www.linkedin.com/in/16priya/" >   <BsLinkedin /></a>
       <a href='https://github.com/Priya-1607'> <FaGithub /></a>  
         <a href="mailto:priyasingh882656@gmail.com"> <IoMailOutline /></a> 
          <FaHome type='button' onClick={handleClick}/>
@@ -81,6 +82,7 @@ export default function BasicCard() {
          <a href="https://leetcode.com/u/priya16singh/">     <SiLeetcode /></a>
 
        <a href="https://www.hackerrank.com/profile/priyasingh882656">       <SiHackerrank /></a>
+       
         </Box>
         </Box>
        
