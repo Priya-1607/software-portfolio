@@ -109,7 +109,7 @@ function ProjectCard() {
                     Business compliance platform for registrations, tax filings, and legal workflows.
                   </Typography>
                 </Box>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.registerkaro.in/" target="_blank" rel="noopener noreferrer">
                   <MdArrowOutward className='arrow' />
                 </a>
 

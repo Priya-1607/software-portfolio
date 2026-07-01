@@ -8,7 +8,6 @@ import { BsSuitcaseLg } from "react-icons/bs";
 import BasicCard from '../Card/Card'
 import { BsWrenchAdjustable } from "react-icons/bs";
 import { BsPencilSquare } from "react-icons/bs";
-import Home from '../Home/Home';
 function Navbar({ children }) {
   return (
     <>

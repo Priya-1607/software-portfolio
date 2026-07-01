@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import Typography from '@mui/material/Typography';
-import InputLabel from '@mui/material/InputLabel';
-import TextFieldMui from '@mui/material/TextField'; // Renamed to avoid conflict with styled TextField
 import FormControl from '@mui/material/FormControl';
 import Box from '@mui/material/Box';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/base/TextareaAutosize';
 import { styled } from '@mui/system';
-import { orange } from '@mui/material/colors';
-import { Input as BaseInput } from '@mui/base/Input';
 import { Button as BaseButton, buttonClasses } from '@mui/base/Button';
 
 function Contact() {
