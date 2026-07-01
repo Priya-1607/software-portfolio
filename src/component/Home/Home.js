@@ -1,13 +1,5 @@
 import React from 'react'
-import Typography from '@mui/material/Typography';
-import BasicCard from '../Card/Card'
-import Box from '@mui/material/Box';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-
-import Line1 from '../image/download.jpg'
-import Premium from '../Preium/PremiumTools'
+import { Grid, Box, Typography, Button } from '@mui/material';
 import './home.css'
 import Project from '../Project/Project';
 import Experience from '../Experience/Experience';
@@ -15,166 +7,183 @@ import PremiumTools from '../Preium/PremiumTools';
 import Thoughts from '../Thoughts/Thoughts';
 import Contact from '../Contact/Contact';
 
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: '#fff',
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: 'center',
-//   color: theme.palette.text.secondary,
-//   ...theme.applyStyles('dark', {
-//     backgroundColor: '#1A2027',
-//   }),
-// }));
-
+import { FaDownload } from "react-icons/fa";
 
 function Home() {
-  
+  // ...
   return (
-    <Box sx={{display:'flex container1'}}>
-       <div class="left-container">
-      {/* <Box className='card'>
-     
-        <BasicCard/>
-      
-      </Box> */}
-      </div>
-      {/* <div className='jjjj1'>
-      <div className='head1'>   */}
-      <div class="right-container">
-      <div class="content">
-       <Box className="con" sx={{marginLeft:'35rem',marginTop:'5rem','@media (max-width:765px)': {
-        marginTop:'-30rem',
-     paddingLeft:'13rem',
-    
-     },}}> 
+    <Box className="main-home-wrapper" sx={{ width: '100%', color: 'white' }}>
+      <Box className="content-section" sx={{ width: '100%' }}>
 
-      <Typography className='soft' variant="h1" sx={{color:'white',fontWeight:800}}>
-      SOFTWARE 
-      </Typography>
-      <Typography className='soft' variant="h1" sx={{color:'#353334',fontWeight:800,}}>
-      ENGINEER
-      </Typography>
-      <Typography className="paraw" variant="body2"  sx={{color:'#998f8f',fontSize:'1.2rem','@media (max-width:765px)': {
-       
-     fontSize: '35px'
-     }}}>
-      Passionate about creating intuitive and engaging <br/>user experiences. Specialize in transforming ideas<br/> into beautifully crafted products.
-      </Typography>
-      <Box>
-      <Box>
-     
-    <div className="container">
-  <div className="item">   <Typography variant='h2' className='con' sx={{color:'white',fontWeight:600}}>
-          +2
-        </Typography>
-        <Typography sx={{color:'#998f8f'}}>
-        YEARS OF<br/>
+        {/* Hero Section */}
+        <Box sx={{
+          mt: { xs: '2rem', md: '5rem' },
+          p: { xs: 2, md: 0 },
+          textAlign: { xs: 'center', md: 'left' },
+          position: 'relative'
+        }}>
+          <Typography variant="h1" className='soft' sx={{
+            color: 'white',
+            fontWeight: 800,
+            fontSize: { xs: '3rem', md: '5rem' },
+            lineHeight: 1.1,
+            zIndex: 2,
+            position: 'relative'
+          }}>
+            SOFTWARE ENGINEER
+          </Typography>
 
-        EXPERIENCE
-        </Typography></div>
-  <div className="item"> 
-    <Typography className='con' variant='h2' sx={{color:'white',fontWeight:600}}>
-          +45
-        </Typography>
-        <Typography  sx={{color:'#998f8f'}}>
-        PROJECTS <br/>
+          <Typography variant="h1" sx={{
+            color: 'transparent',
+            WebkitTextStroke: '1px #353334',
+            fontWeight: 800,
+            fontSize: { xs: '4rem', md: '10rem' },
+            lineHeight: 1,
+            mt: -2,
+            opacity: 0.5,
+            zIndex: 1,
+            userSelect: 'none',
+            pointerEvents: 'none',
+            maxWidth: '100%',
+            overflow: 'hidden'
+          }}>
+            SOFTWARE
+          </Typography>
 
-        COMPLETED
-        </Typography>
-        </div>
-  <div className="item">
-  <Typography className='con' variant='h2' sx={{color:'white',fontWeight:600}}>
-          +20
-        </Typography>
-        <Typography sx={{color:'#998f8f'}}>
-        WORLDWIDE  <br/>
+          <Typography className="paraw" variant="body2" sx={{
+            color: '#998f8f',
+            fontSize: { xs: '1rem', md: '1.2rem' },
+            mt: 2,
+            maxWidth: '600px',
+            mx: { xs: 'auto', md: 0 }
+          }}>
+            Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted products.
+          </Typography>
 
-        CLIENTS
-        </Typography>
+          <Box sx={{ mt: 4, display: 'flex', justifyContent: { xs: 'center', md: 'flex-start' } }}>
+            <Button
+              variant="contained"
+              startIcon={<FaDownload />}
+              href="/resume.pdf" // Placeholder path
+              download="Priya_Singh_Resume.pdf"
+              sx={{
+                backgroundColor: '#F36C38',
+                color: 'white',
+                fontWeight: 600,
+                borderRadius: '8px',
+                px: 3,
+                py: 1.5,
+                '&:hover': {
+                  backgroundColor: '#d35a2d'
+                }
+              }}
+            >
+              Download Resume
+            </Button>
+          </Box>
+        </Box>
 
-  </div>
-</div>
+        {/* Highlight Section */}
+        <Box sx={{
+          mt: 8,
+          p: { xs: 2, md: 0 },
+          ml: { xs: 0, md: '2rem' },
+          textAlign: { xs: 'center', md: 'left' }
+        }}>
+          <Typography variant="h1" sx={{ color: 'white', fontWeight: 800, fontSize: { xs: '3rem', md: '5rem' } }}>
+            PASSIONATE
+          </Typography>
+          <Typography variant="h1" sx={{ color: '#353334', fontWeight: 800, fontSize: { xs: '3rem', md: '5rem' } }}>
+            DEVELOPER
+          </Typography>
+        </Box>
 
+        {/* Stats Section */}
+        <Box className="container" sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 4,
+          mt: 8,
+          justifyContent: { xs: 'center', md: 'flex-start' }
+        }}>
+          <Box className="item" sx={{ textAlign: 'center' }}>
+            <Typography variant='h2' sx={{ color: 'white', fontWeight: 600 }}>+3</Typography>
+            <Typography sx={{ color: '#998f8f' }}>YEARS OF<br />EXPERIENCE</Typography>
+          </Box>
+          <Box className="item" sx={{ textAlign: 'center' }}>
+            <Typography variant='h2' sx={{ color: 'white', fontWeight: 600 }}>+15</Typography>
+            <Typography sx={{ color: '#998f8f' }}>PROJECTS<br />COMPLETED</Typography>
+          </Box>
+          <Box className="item" sx={{ textAlign: 'center' }}>
+            <Typography variant='h2' sx={{ color: 'white', fontWeight: 600 }}>+10</Typography>
+            <Typography sx={{ color: '#998f8f' }}>AI AGENTS<br />DEVELOPED</Typography>
+          </Box>
+        </Box>
 
+        {/* Education Grid */}
+        <Box sx={{ mt: 8, p: { xs: 2, md: 0 } }}>
+          <Grid container spacing={4}>
+            <Grid item xs={12} md={6}>
+              <Box className="org-box" sx={{
+                backgroundColor: '#F46C39',
+                height: "auto",
+                minHeight: "12rem",
+                borderRadius: '15px',
+                p: 3,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.3)'
+              }}>
+                <Typography sx={{ fontSize: '1.5rem', fontWeight: 700, color: 'white', textAlign: 'center' }}>
+                  B-Tech (ECE)
+                </Typography>
+                <Typography sx={{ fontSize: '1.1rem', color: 'white', textAlign: 'center', mt: 1 }}>
+                  World College of Technology and Management, Haryana
+                </Typography>
+                <Typography sx={{ fontSize: '1.1rem', fontWeight: 600, color: 'white', mt: 1 }}>
+                  2019 – 2022
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box className="green-box" sx={{
+                backgroundColor: '#c5ff41',
+                height: "auto",
+                minHeight: "12rem",
+                borderRadius: '15px',
+                p: 3,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.3)'
+              }}>
+                <Typography sx={{ fontSize: '1.5rem', fontWeight: 700, color: 'black', textAlign: 'center' }}>
+                  12th CBSE
+                </Typography>
+                <Typography sx={{ fontSize: '1.1rem', color: 'black', textAlign: 'center', mt: 1 }}>
+                  Govt-Co Ed Sr Sec School site 2, Delhi
+                </Typography>
+                <Typography sx={{ fontSize: '1.1rem', fontWeight: 600, color: 'black', mt: 1 }}>
+                  2017 – 2018
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
 
-<Box sx={{ flexGrow: 1 }} className='hhh'>
-      <Grid container columns={16}>
-        <Grid item xs={6}>
-       <Box className="org-box" sx={{backgroundColor:'#F46C39', height:"15rem",width:'19rem',borderRadius:'10px',top:'3rem',display:'grid','@media (max-width:765px)': {
-       width:'65rem',
-       height:'50rem',
-       borderRadius:'20px'
-    
-     }}}>
-        {/* <img src={Line1} alt="Download Icon" /> */}
-        <Typography sx={{fontSize:'1.5rem',justifyContent:'center',textAlign:'center',color:'white','@media (max-width:765px)': {
-      fontSize:'0.5rem'
-      
-    
-     }}}>
-        B-Tech (ECE)
-        </Typography>
-        <Typography sx={{fontSize:'1.5rem',display:'flex',justifyContent:'center',textAlign:'center',color:'white'}}>
-          World College of Technology and Management
-        </Typography>
-        <Typography sx={{fontSize:'1.5rem',display:'flex',justifyContent:'center',color:'white'}}>
-          72%
-        </Typography>
-       
-       </Box>
-      
-        </Grid>
-        <Grid item xs={6}>
-        
-        <Box className="green-box" sx={{backgroundColor:'#c5ff41', height:"15rem",width:'24rem',borderRadius:'10px',display:'grid'}}>
-        {/* <img src={Line1} alt="Download Icon" /> */}
-        <Typography sx={{fontSize:'1.5rem',display:'flex',justifyContent:'center',color:'black','@media (max-width:765px)': {
-      fontSize:'6.5rem'
-      
-    
-     }}}>
-        12 Class
-        </Typography>
-        <Typography sx={{fontSize:'1.5rem',display:'flex',justifyContent:'center',color:'black',textAlign: 'center','@media (max-width:765px)': {
-      fontSize:'6.5rem'
-      
-    
-        }}}>
-        Govt-Co Ed Sr Sec School site 2 
-        </Typography>
-<Typography sx={{fontSize:'1.5rem',display:'flex',justifyContent:'center',color:'black','@media (max-width:765px)': {
-      fontSize:'6.5rem'
-      
-    
-        }}}>
-  74%
-</Typography>
-       </Box>
-        </Grid>
-      </Grid>
-    </Box>
-    
-</Box>
+        {/* Embedded Sections */}
+        <Project />
+        <Experience />
+        <PremiumTools />
+        <Thoughts />
+        <Contact />
 
-    </Box>       
       </Box>
-      
-      
-      <Project/>
-      
-      <Experience/>
-      <PremiumTools/>
-      <Thoughts/>
-      <Contact/>
-      {/* </Box> */}
-      </div>
-   </div>
     </Box>
-   
-   
-  )
+  );
 }
 
-
-
-export default Home
+export default Home;

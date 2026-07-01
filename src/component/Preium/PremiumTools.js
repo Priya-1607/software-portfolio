@@ -8,22 +8,22 @@ import CardActionArea from '@mui/material/CardActionArea';
 import ToolCard from '../Card/ToolCard';
 function PremiumTools() {
   return (
-    <Box sx={{marginLeft:'35rem',marginTop:'5rem'}}>
-    <div>
- 
-      <Typography variant="h1" sx={{color:'white',fontWeight:800,'@media (max-width:765px)': {
-    fontSize:'140px'
-     }}}>
-      PREMIUM 
-      </Typography>
-      <Typography variant="h1" sx={{color:'#353334',fontWeight:800,'@media (max-width:765px)': {
-    fontSize:'140px'
-     }}}>
-      TOOLS
-      </Typography>
-   
-<ToolCard/>
-    </div>
+    <Box sx={{
+      mt: { xs: '2rem', md: '5rem' },
+      ml: { xs: 0, md: '5rem' },
+      p: { xs: 2, md: 0 }
+    }}>
+      <div>
+        <Typography variant="h1" sx={{ color: 'white', fontWeight: 800, fontSize: { xs: '3rem', md: '5rem' } }}>
+          PREMIUM
+        </Typography>
+        <Typography variant="h1" sx={{ color: '#353334', fontWeight: 800, fontSize: { xs: '3rem', md: '5rem' } }}>
+          TOOLS
+        </Typography>
+
+
+        <ToolCard />
+      </div>
     </Box>
   )
 }

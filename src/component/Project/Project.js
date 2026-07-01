@@ -7,19 +7,35 @@ function Project() {
   return (
     <div>
 
-<Box sx={{marginLeft:'35rem',marginTop:'5rem'}}>
-      <Typography variant="h1" sx={{color:'white',fontWeight:800,'@media (max-width:765px)': {fontSize:'140px'}}}>
-      RECENT 
-      </Typography>
-      <Typography variant="h1" sx={{color:'#353334',fontWeight:800,'@media (max-width:765px)': {fontSize:'140px'}}}>
-      PROJECTS
-      </Typography>
+      <Box sx={{
+        mt: { xs: '2rem', md: '5rem' },
+        p: { xs: 2, md: 0 }
+      }}>
+        <Typography variant="h1" sx={{ color: 'white', fontWeight: 800, fontSize: { xs: '2.5rem', md: '5rem' } }}>
+          RECENT
+        </Typography>
+        <Typography variant="h1" sx={{
+          color: 'transparent',
+          WebkitTextStroke: '1px #353334',
+          fontWeight: 800,
+          fontSize: { xs: '4rem', md: '10rem' },
+          lineHeight: 1,
+          mt: -2,
+          opacity: 0.5,
+          zIndex: 1,
+          userSelect: 'none',
+          pointerEvents: 'none',
+          maxWidth: '100%',
+          overflow: 'hidden'
+        }}>
+          PROJECTS
+        </Typography>
       </Box>
-     
+
       <Box>
-      
-       <ProjectCard/>
-         </Box>
+
+        <ProjectCard />
+      </Box>
     </div>
   )
 }
